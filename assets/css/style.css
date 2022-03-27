@@ -3,3 +3,18 @@ body {
 }
 
 
+.carousel {
+
+    height: 660px;
+
+}
+
+.carousel-inner,
+.item,
+img {
+
+    height: 660px;
+
+    object-fit: contain;
+
+}
