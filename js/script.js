@@ -1,19 +1,23 @@
 
 //Contact Us Modal
 
-var contactModal = document.getElementById('contactModal')
-contactModal.addEventListener('contactModal', function (event) {
-  // Button that triggered the modal
-  var button = event.relatedTarget
-  // Extract info from data-bs-* attributes
-  var recipient = button.getAttribute('InputEmail1')
-  // If necessary, you could initiate an AJAX request here
-  // and then do the updating in a callback.
-  //
-  // Update the modal's content.
-  
-  var modalBodyInput = contactModal.querySelector('.modal-body input')
+// Get the modal
+var modal = document.getElementById('myModal');
 
-  
-  modalBodyInput.value = recipient
-})
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById('myImg');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
