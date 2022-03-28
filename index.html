@@ -19,7 +19,7 @@
 <header>
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-        <a class="navbar-brand" href="./index.html">THANKAMMA'S KITCHEN</a>
+        <a class="navbar-brand active" aria-current="page" href="/">THANKAMMA'S KITCHEN</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,6 +43,10 @@
     </div>
 </nav>
 </header>
+
+<!--End Navigation-->
+
+
 <!--Hero-->
 <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -68,20 +72,25 @@
     </button>
 </div>
 
+<!--End Hero Section-->
+
+
+
 <!--Visit Information-->
 <section>
 
-    <div class="container col-md-8 mx-auto p-5">
-        <div class="row justify-content-center gap-3">
-            <div id="visit-us" class="col-4">
+    <div class="container col-md-8 mx-auto p-5 text-center">
+        <div class="row gap-4">
+            <div id="visit-us" class="col-5 p-3 mb-4">
                 <h2>Visit Us</h2>
             <h4>Hours of Operation:</h4>
             <p><strong>Sunday - Thursday</strong><br>11:00am - 7:00 pm</p>
             <p><strong>Friday &amp; Saturday&nbsp;</strong><br>11:00 am - 10:00 pm</p>
             </div>
-            <div class="col-7">
+            <div class="col-5">
                 <h2>Location</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1530067.5211738083!2d-73.87861844522585!3d41.49532135582739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e65311f21151a5%3A0xae9a6d5b056170e5!2sConnecticut!5e0!3m2!1sen!2sus!4v1648405464874!5m2!1sen!2sus" width="600" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <address class="justify-content-center">555 Nowhere St., Madeupville, MV 50557</address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1530067.5211738083!2d-73.87861844522585!3d41.49532135582739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e65311f21151a5%3A0xae9a6d5b056170e5!2sConnecticut!5e0!3m2!1sen!2sus!4v1648405464874!5m2!1sen!2sus" width="550" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>
@@ -89,7 +98,14 @@
 
 </section>
 
+<!--End Visit Information-->
+
+
+
 <!--About Section-->
+
+<!--End About Section-->
+
 
 
 <!--Fixed bottom contact info nav-->
@@ -104,20 +120,48 @@
         </div>
 
         <div>
-            <address class="justify-content-center">555 Nowhere St., Madeupville,CT 50557</address>
+            <address class="justify-content-center">555 Nowhere St., Madeupville, MV 50557</address>
         </div>
 
+        <!-- Button trigger modal contact -->
         <div>
             <ul class="navbar-nav me-auto mb-2 d-inline px-2">
-                <button type="button" class="btn btn-outline-success btn-sm ">
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#contactModal">
                     <li class="nav-item">
                         <a class="nav-link active">Contact</a>
                     </li>
                 </button>
 
-                <button type="button" class="btn btn-outline-success btn-sm ">
+  
+  <!-- Modal -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactmodal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactmodal">Contact</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <form>
+            <form>
+                <div class="mb-3">
+                  <label for="InputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+        </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--modal-->                <button type="button" class="btn btn-outline-success btn-sm ">
                     <li class="nav-item">
-                        <a class="nav-link active">Email Signup</a>
+                        <a class="nav-link active" href="./html/signup.html">Email Signup</a>
                     </li>
                 </button>
             </ul>
@@ -127,14 +171,15 @@
 
 </nav>
 
+<
 
 
-
-
-</body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
 </script>
+<script src="./js/script.js"></script>
+</body>
+
 
 </html>
