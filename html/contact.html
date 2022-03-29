@@ -46,45 +46,46 @@
 
     <!--End Navigation-->
 
-
-    <body>
-
-        <form class="col-lg-6 offset-lg-3 p-5">
-            <div class="row justify-content-center">
+    <form class="col-lg-6 offset-lg-3 p-5">
+        <div class="form-box">
+            <div class="text-center">
                 <h1>Contact Us</h1>
-
-
-                <label for="name" id="name-label">Name:</label>
-                <input type="text" id="name" name="name" placeholder="Enter your name" required />
-
-                <label for="email" id="email-label">Email:</label>
-                <input type="email" id="email" pattern=".+@globex\.com" name="email" placeholder="Enter your email"
-                    required />
-                <label for="tel" id="number-label">Phone Number:</label>
-                <input type="tel" id="number" name="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}." min="10" max="12"
-                    placeholder="Enter phone number" required />
-
-
-
-
-                <h5>What would you like to get in touch about?</h5>
+                <p>send us a message via the form below and we’ll get back to you as soon as possible.</p>
+            </div>
+            
+            <form action="submit" method="post">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" id="name" type="text" name="Name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" pattern=".+@globex\.com" id="email" type="email" name="Email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone number">Phone Number</label>
+                <input class="form-control" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}." min="10" max="12" id="tel" type="tel" name="tel" required>
+              </div>
+              <div class="form-group">
+                <label>What would you like to get in touch about?</label>
                 <select name="dropdown" id="dropdown">
                     <option value="gen-inquiry">General Inquiry</option>
                     <option value="press">Press Inquiry</option>
                     <option value="career">Career Opportunities</option>
                 </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="Message"></textarea>
+              </div>
+              <input class="btn btn-primary" type="submit" value="Submit" />
+              </div>
+            </form>
+          </div>
 
-
-
-                <h5>Additional Comments</h5>
-                <label for="comments">Please add any addition comments/feedback</label><br>
-                <textarea id="comments" name="comments" rows="5" cols="33"></textarea><br>
-
-                <button type="submit" id="submit">Submit</button>
-            </div>
-        </form>
-
-
+    </form>
+    
+      
 
         <!--Fixed bottom contact info nav-->
 
