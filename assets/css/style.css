@@ -1,32 +1,34 @@
 * {
     font-family: 'Laila', sans-serif;
-    
+
 }
 
 body {
     background: #f7f7f7;
-  }
+}
 
-  .form-group {
-      padding: 10px;
-  }
-  
-  .form-box {
+.form-group {
+    padding: 10px;
+}
+
+.form-box {
     max-width: 700px;
     margin: auto;
     padding: 50px;
     background: #ffffff;
     border: 10px solid #f2f2f2;
-  }
-  
-  h1, p {
+}
+
+h1,
+p {
     text-align: center;
-  }
-  
-  input, textarea {
+}
+
+input,
+textarea {
     width: 100%;
     padding: auto;
-  }
+}
 
 /* .carousel {
     height: 660px;
@@ -44,4 +46,3 @@ img {
     font-size: large;
     font-weight: 500;
 } */
-
