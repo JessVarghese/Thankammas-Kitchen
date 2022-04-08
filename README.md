@@ -6,7 +6,7 @@
   
   ## Description
 
- Thankamma's Kitchen is a fictional restaurant  multi-page website using HTML, CSS, jQuery and Bootstrap.
+ Thankamma's Kitchen is a fictional restaurant multi-page website that offers the user information on a new up-and-coming restaurant.
 
 
 [Deployed application](https://jessvarghese.github.io/Thankammas-Kitchen/)
